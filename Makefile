@@ -3,18 +3,18 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rmarrero <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: rmarrero <rmarrero@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/16 12:58:52 by rmarrero          #+#    #+#              #
-#    Updated: 2025/02/17 11:55:01 by rmarrero         ###   ########.fr        #
+#    Updated: 2025/03/21 23:00:57 by rmarrero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-# --- Mandatory --- #
-NAME = pipex
+
+NAME = philo
 SRC_DIR = ./src/mandatory/
 OBJ_DIR = ./obj
 
-SRCS =	$(SRC_DIR)philo.c
+SRCS =	$(SRC_DIR)main.c $(SRC_DIR)philo.c $(SRC_DIR)utils.c $(SRC_DIR)parsing.c 
 
 OBJS = $(SRCS:$(SRC_DIR)%.c=$(OBJ_DIR)/%.o)
 
@@ -40,7 +40,7 @@ ifdef BONUS
 	SRC_DIR = ./src/bonus/
 else
 	OBJECTS = $(OBJS)
-	HEADER = ./include/pipex.h
+	HEADER = ./include/philo.h
 	SRC_DIR = ./src/mandatory/
 endif
 
