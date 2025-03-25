@@ -14,7 +14,7 @@ NAME = philo
 SRC_DIR = ./src/mandatory/
 OBJ_DIR = ./obj
 
-SRCS =	$(SRC_DIR)main.c $(SRC_DIR)philo.c $(SRC_DIR)utils.c $(SRC_DIR)parsing.c 
+SRCS =	$(SRC_DIR)philo.c
 
 OBJS = $(SRCS:$(SRC_DIR)%.c=$(OBJ_DIR)/%.o)
 
